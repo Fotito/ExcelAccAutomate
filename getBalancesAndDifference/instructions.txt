@@ -1,0 +1,17 @@
+intructions. 
+
+create multiple sheets, first sheet, accounts active with fasta, but not resolvsa
+
+then accounts rsa have but fasta does not
+
+compare the remianing balance of accounts in both, compare difference
+
+fasta sheet use closing
+rsa sheet use bal outstanding
+
+if the difference is a multiple of 24.15 it is the cost, minus that from bal oustanding, get balance without fees, th
+
+file structure:
+ID|capital amount| balance with fees | balance without fees| fasta balance| comparison(fatsa-balance without fees)| comment
+
+if fasta is higher, they have not received a payment rsa received. if fasta is smaller, rsa missed a payment
