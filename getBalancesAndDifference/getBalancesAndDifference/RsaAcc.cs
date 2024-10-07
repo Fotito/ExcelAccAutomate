@@ -20,7 +20,7 @@ namespace getBalancesAndDifference
         private string Title;
          private double   CapitalAmt;
           private double  BalOutstanding;
-
+//1,4.5.6.7.8.9.10.11
         public RsaAcc(string Accnum, string debtNum, string IDNum, string name, string surname, string initial, string title,
             double capAmmoun, double balanceOutstanding) {
         this.Accountnumber = Accnum;
