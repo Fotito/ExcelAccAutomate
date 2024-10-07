@@ -18,7 +18,7 @@ namespace getBalancesAndDifference
         private string email;
         
         private double closing_balance;
-
+//1,2,3,4,5,6,7,25
         public FastaAcs (string LoanNum, string title, string name, string surname, 
             string id, string cellNum, string email, double balance) { 
         this.loannumber = LoanNum;
