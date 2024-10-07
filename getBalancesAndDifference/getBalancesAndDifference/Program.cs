@@ -31,7 +31,14 @@ internal class Program
                        int  fasColumns = FastaSheet.Columns.Count();
                     int    fasRows=FastaSheet.Rows.Count();
                         
-                  
+                  for (int i = 2; i <= resRow; i++)
+{// make rsa account object
+	
+	for (int j = 2; j <=fasRows; j++) {
+	//make fasta account object, do aformantioned processing, ad combined account to array
+	}
+	
+}
                 //create objects of all 3 classes, fill rsa and fasta with record from excel.
                 //do that all in a loop that repeats so long as both have more records to take from
                 //use a nested loop, where it looks through ID numbers until it finds one that is the same
