@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace getBalancesAndDifference
 {
-    internal class rsaAcs
+    internal class FastaAcs
     {
         private string loannumber;
         private string title;
@@ -19,7 +19,7 @@ namespace getBalancesAndDifference
         
         private double closing_balance;
 
-        public rsaAcs(string LoanNum, string title, string name, string surname, 
+        public FastaAcs (string LoanNum, string title, string name, string surname, 
             string id, string cellNum, string email, double balance) { 
         this.loannumber = LoanNum;
             this.title = title;
