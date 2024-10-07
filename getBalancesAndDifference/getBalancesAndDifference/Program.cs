@@ -5,7 +5,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("please give the name or filepath of the excel file. use a .xlxs file");
+        Console.WriteLine("please give the name or filepath of the excel file. use a .xlsx file");
         string path = Console.ReadLine();
         while (path == null)
         {
