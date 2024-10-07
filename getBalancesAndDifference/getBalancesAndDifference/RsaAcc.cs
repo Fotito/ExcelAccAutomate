@@ -8,7 +8,7 @@ using static System.Net.WebRequestMethods;
 
 namespace getBalancesAndDifference
 {
-    internal class FastaAcc
+    internal class RsaAcc
     {
         
        private string     Accountnumber;
@@ -21,7 +21,7 @@ namespace getBalancesAndDifference
          private double   CapitalAmt;
           private double  BalOutstanding;
 
-        public FastaAcc(string Accnum, string debtNum, string IDNum, string name, string surname, string initial, string title,
+        public RsaAcc(string Accnum, string debtNum, string IDNum, string name, string surname, string initial, string title,
             double capAmmoun, double balanceOutstanding) {
         this.Accountnumber = Accnum;
             this.DebtNumber = debtNum;
