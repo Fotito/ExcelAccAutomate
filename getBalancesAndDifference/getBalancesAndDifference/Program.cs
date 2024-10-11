@@ -39,6 +39,61 @@ internal class Program
 	}
 	
 }
+
+	               List <RsaAcc> rsaAccs = new List <RsaAcc>();
+ List <FastaAcs> fasAccs= new List<FastaAcs>();
+
+ for (int j = 2; j <= fasRows; j++)
+ {
+     fasAccs.Add(new FastaAcs(FastaSheet.Cells[j, 1].Value.ToString(),
+         FastaSheet.Cells[j, 2].Value.ToString(),
+         FastaSheet.Cells[j, 3].Value.ToString(),
+         FastaSheet.Cells[j, 4].Value.ToString(),
+         FastaSheet.Cells[j, 5].Value.ToString(),
+         FastaSheet.Cells[j, 6].Value.ToString(),
+         FastaSheet.Cells[j, 7].Value.ToString(),
+         double.Parse(FastaSheet.Cells[j, 25].Value.ToString())
+         ));
+ }
+
+ for (int i = 2; i <= resRow; i++)
+ {
+     if (rsaSheet.Cells[i, 1].Value.ToString().Equals("FASTA (Pty) Ltd"))
+     {
+         try { 
+             rsaAccs.Add(new RsaAcc(rsaSheet.Cells[i, 1].Value.ToString(),
+                 rsaSheet.Cells[i, 4].Value.ToString(),
+                 rsaSheet.Cells[i, 5].Value.ToString(),
+                 rsaSheet.Cells[i, 6].Value.ToString(),
+                 rsaSheet.Cells[i, 8].Value.ToString(),
+                 rsaSheet.Cells[i, 9].Value.ToString(),
+                Convert.ToDouble(rsaSheet.Cells[i, 11].Value.ToString()),
+                 Convert.ToDouble(rsaSheet.Cells[i, 12].Value.ToString())
+                 ));
+             Console.WriteLine(i);
+         }
+         catch (Exception e) { Console.WriteLine("something is wrong with the record at row " + i); }
+
+     }
+
+ }
+ //get lists for bth, create 2 lists, compare
+ 
+
+ for (int i = 0; i <= rsaAccs.Count; i++) {
+
+     for (int j = 0; j <= fasAccs.Count; j++) {
+         if ((rsaAccs[i].getID()).Equals(fasAccs[j].getID())) {
+             rsaAccs.Remove(rsaAccs[i]);
+             fasAccs.Remove(fasAccs[j]);
+         }
+
+
+     }
+
+ }
+
+ Console.WriteLine(rsaAccs.Count+" "+fasAccs.Count);
                 //create objects of all 3 classes, fill rsa and fasta with record from excel.
                 //do that all in a loop that repeats so long as both have more records to take from
                 //use a nested loop, where it looks through ID numbers until it finds one that is the same
