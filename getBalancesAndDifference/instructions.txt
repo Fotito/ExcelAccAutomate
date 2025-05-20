@@ -16,6 +16,4 @@ ID|capital amount| balance with fees | balance without fees| fasta balance| comp
 
 if fasta is higher, they have not received a payment rsa received. if fasta is smaller, rsa missed a payment
 test data :
-C:\Users\User\Desktop\getBalancesAndDifference\ResolvSA_balance_file.xlxs
-Sheet1
-ResolvSA_balance_file
+
